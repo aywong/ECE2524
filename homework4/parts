@@ -1,0 +1,11 @@
+PARTID DESCRIPTION FOOTPRINT QTY
+CD123 partdesc1 40 1
+CD126 partdesc2 12 1
+CE123 partdesc3 40 1
+CG123 partdesc4 44 15
+CF124 partdesc5 23 1
+SD123 partdesc6 54 1
+DD143 partdesc7 20 2
+RD123 partdesc8 40 1
+CT122 partdesc9 78 1
+
