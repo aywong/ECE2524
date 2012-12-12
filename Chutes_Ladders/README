@@ -1,0 +1,88 @@
+Chutes and Ladders Instructions
+===============================
+
+Setup:
+
+1. Connect the Rotary Encoder Module to the bottom row of the JA Port
+2. Connect the OLED to the JD port
+3. Connect your mini USB connector to the "DEBUG" slot, and other side of the USB to the computer
+3. Open MPLAB X
+	a. Go to file > Open Project
+	b. point to the "Code" folder you downloaded
+4. Debug the program in MPLAB X. 
+
+After it is finished, the program should be running on the microcontroler. 
+
+===============================
+
+Game Information:
+
+The game board is 48 spaces (6x8 board).
+
+Players will be prompted at the begining of their turn on the OLED.
+
+If you forget who's turn you're on, the corresponding LEDs on the board light up. 
+	(ex. LED1 for player 1)
+
+You can't land on a chute on the first row (spaces 1-6) and a ladder on the last row (spaces 43-48)
+
+===============================
+
+Pre-Game:
+
+1. The game board will prompt you to select the number of players (1-4 can play)
+	a. To do this use the rotary encoder to choose and button one on the board to confirm choice.
+
+2. After the number of players are chosen, the board will prompt for difficulty level
+	a. One selects easy mode and two selects hard mode.
+
+After the difficulty level is selected the game will begin!
+
+===============================
+
+How to Play:
+
+Use button number one to roll the die when your player number is prompted. 
+
+The game board will show you how many you rolled and what your current position on the board is.
+After you move your die roll, it is possible to encounter a chute or ladder.
+	A chute will knock you back one die roll (1-6), and a ladder will move you forward a die roll (1-6).
+	
+		Easy Mode: You have a 10% chance of landing on a chute or ladder
+
+		Hard Mode: You have a 15% chance of landing on a chute or ladder
+
+
+Once you have finished your turn press button number 1 to end your turn and move on to the next player.
+
+Repeat this process for the number of players in the game.
+
+===============================
+
+Winning:
+
+The game will continue until a player has reached space number 48.  
+
+
+	Easy Mode:
+
+	In Easy mode, advancing past space 48 will also result in the player winning.
+
+
+	Hard Mode:  
+	
+	In Hard mode, you must land on space 48 by an exact die roll. If you roll greater than the spaces
+	required, you will move backward the number of spaces left on the die roll.
+	EX: If you are on space 45 and roll a 6 you will end up on space 45 again. If you were to roll a 5,
+	you would end up on space 46.
+
+
+After you have won, it will go back to the menu in "Pre-Game"
+
+===============================
+
+Enjoy the game!
+
+Created by:
+Annie Wong, Brian Zick, Chris Din, Randall Ferrance.
+
